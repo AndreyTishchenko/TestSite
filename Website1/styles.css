@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Расстояние между квадратами */
+    flex-wrap: wrap;
+    word-break: keep-all;
+}
+
+span{
+    font-size: 9.2vw;
+}
+
+.square {
+    border: 2px solid #000;
+    clip-path: inset(0);
+    overflow: hidden;
+    display: inline-block;
+    width: 2.6em;
+    height: 0.45em;
+    margin: 0px 0.07em;
+    background-color: beige;
+}
+
+.two{
+    width: 0.7em;
+}
+
+.three{
+    width: 1.6em;
+}
+
+.four{
+    width: 5.5em;
+}
+
+.container2{
+    display: none;
+}
+
+
+
+.square video {
+    position: absolute; /* Позиционирование относительно страницы */
+    z-index: -1;
+    width: 100%;
+    height: fit-content;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 888px) {
+    .container{
+        display: none;
+    }
+    
+    .container2{
+        display: block;
+    }
+
+    .container2 span{
+        font-size: 12.5vw;
+    }
+
+    .square{
+        width: 3em;
+    }
+
+    .two{
+        width: 4em;
+    }
+    
+    .three{
+        width: 1.6em;
+    }
+    
+    .four{
+        width: 1.2em;
+    }
+
+    .five{
+        width: 2.5em;
+    }
+
+    .square video{
+        width: 100%;
+    }
+}

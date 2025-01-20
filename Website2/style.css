@@ -1,0 +1,542 @@
+body {
+    margin: 0 auto;
+    color: white;
+    background-color: #282829;
+}
+
+@font-face {
+    font-family: Prata;
+    src: url("./assets/fonts/Prata-Regular.ttf");
+}
+
+h1 {
+    font-family: Prata;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 96px;
+    text-align: left;
+    color: white;
+    margin-bottom: 10px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 44px;
+    position: sticky;
+    background-color: rgba(33, 33, 33, 0.84);
+}
+
+header ul {
+    display: flex;
+    gap: 29px;
+}
+
+header ul li {
+    font-family: Arial;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+header ul li::marker {
+    content: '';
+}
+
+.Logo {
+    font-family: Prata;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.03em;
+}
+
+.app {
+    max-width: 1920px;
+    background-color: #282829;
+    width: 100%;
+    margin: auto;
+}
+
+.offer {
+    padding-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    padding-bottom: 50px;
+}
+
+.offer img {
+    aspect-ratio: 763/1009;
+    width: 40%;
+}
+
+.welcome_section_content {
+    max-width: 537px;
+    width: 100%;
+}
+
+.welcome_section_content h2 {
+    margin-bottom: 34px;
+    margin-top: 0px;
+}
+
+.offers {
+    margin: 0px;
+    padding: 0px;
+}
+
+.offers li {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.offers li span {
+    font-family: Prata;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+}
+
+.offers li::before {
+    content: url('./assets/images/svg/icon.svg');
+    width: 39px;
+    height: 37px;
+    margin-right: 17px;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 34px;
+}
+
+.Order-button-1 {
+    width: 180px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.offer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.more_offers {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 99px;
+}
+
+p {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+.more_offers ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+.more_offers li {
+    display: flex;
+    width: 100%;
+}
+
+.more_offers li p {
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+}
+
+.more_offers li div {
+    background-image: url('./assets/images/svg/marker.svg');
+    position: relative;
+    width: 58px;
+    height: 48px;
+    aspect-ratio: 58/48;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+hr {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.conditions {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conditions button {
+    width: 100%;
+    height: 78px;
+    border-radius: 4px;
+    background-color: white;
+    color: rgba(40, 40, 41, 1);
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.form_section {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 10px;
+}
+
+.form {
+    display: flex;
+    margin: auto;
+    background-color: white;
+    background-image: url("./assets/images/png/hotel.png");
+    background-size: auto 100%;
+    height: 628px;
+    background-repeat: no-repeat;
+    background-position: right;
+    max-width: 1597px;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 24px;
+}
+
+.form h2 {
+    color: rgb(56, 83, 93, 1);
+}
+
+.image1 {
+    aspect-ratio: 622/724;
+    width: 32.3959%;
+}
+
+.image2 {
+    aspect-ratio: 589/724;
+    width: 30.6774%;
+}
+
+.form img {
+    position: relative;
+    aspect-ratio: 599.95 / 903.69;
+    width: 451px;
+    height: fit-content;
+    bottom: 50px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    max-width: 761px;
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    border: 2px solid rgba(214, 214, 214, 1);
+    border-radius: 4px;
+    padding-left: 5%;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(85, 86, 90, 1);
+}
+
+.input::placeholder {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(85, 86, 90, 0.49);
+}
+
+.name {
+    margin-bottom: 24px;
+}
+
+.form div {
+    width: 48.91%;
+}
+
+.form h2 {
+    font-family: Prata;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 59.4px;
+    text-align: left;
+}
+
+.checkbox_label input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox_label {
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.7px;
+    color: rgba(85, 86, 90, 1);
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 28px;
+}
+
+.submit_button {
+    max-width: 761px;
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(40, 40, 41, 1);
+}
+
+.contacts {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    border-top: 2px solid rgba(213, 201, 190, 1);
+    border-bottom: 2px solid rgba(213, 201, 190, 1);
+}
+
+.contacts span {
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.part_of_footer {
+    display: flex;
+    max-width: 1612px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .Order-button-1 {
+    margin: 0px;
+}
+
+.social_networks {
+    display: flex;
+    gap: 32px;
+    margin-left: 67px;
+}
+
+@media screen and (max-width: 793px) {
+    .form img {
+        display: none;
+    }
+
+    .form h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .form div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .contacts span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    header ul li {
+        font-size: calc(10px + 6*(100vw / 1920));
+    }
+
+    header .Logo {
+        font-size: calc(10px + 26*(100vw / 1920));
+    }
+
+    .more_offers{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conditions{
+        width: 90%;
+    }
+
+    .image1{
+        align-self: baseline;
+        margin-left: 30px;
+        margin-bottom: 20px;    
+    }
+
+    .image2{
+        align-self: flex-end;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .first_part_of_footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Logo {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .social_networks {
+        gap: 16px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    footer .Order-button-1 {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .second_part_of_footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .second_part_of_footer p {
+        font-size: 14px;
+    }
+
+    .offer {
+        flex-direction: column;
+    }
+
+    .offer_content {
+        align-self: flex-start;
+        width: 90%;
+    }
+
+    .offer img {
+        align-self: flex-end;
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .first_part_of_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Logo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .social_networks {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    footer .Order-button-1 {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .second_part_of_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .second_part_of_footer p {
+        font-size: 12px;
+    }
+
+    .offers li {
+        font-size: 14px;
+    }
+
+    .offers li span {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 66px;
+    }
+
+    header ul li {
+        font-size: calc(6px + 10*(100vw / 1920));
+        line-height: normal;
+    }
+
+    .offer_content {
+        margin-bottom: 40px;
+    }
+}
