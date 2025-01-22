@@ -485,6 +485,9 @@ footer .Order-button-1 {
 @media screen and (max-width: 793px) {
     .form{
         background-image: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
     }
     .form img {
         display: none;
@@ -627,11 +630,15 @@ footer .Order-button-1 {
         font-size: 14px;
     }
 
+    .offers li {
+        background: transparent;
+        margin-left: 12%;
+    }
+
     .offers{
         width: 90%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         position: absolute;
         top: 10%;
         background-color: #00000099;
