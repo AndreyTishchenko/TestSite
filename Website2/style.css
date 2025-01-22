@@ -176,6 +176,7 @@ header ul li::marker {
     font-family: Arial;
     font-size: 24px;
     font-weight: 400;
+    padding-left: 15px;
     display: flex;
     align-items: center;
     background: rgba(40, 40, 41, 0.7);
