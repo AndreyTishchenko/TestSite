@@ -510,17 +510,17 @@ footer .Order-button-1 {
         border-radius: 20px 20px 0px 0px;
     }
 
-    .form h2 span{
-        background-color: #000000cf;
-    }
+
 
     .form form{
         flex-direction: column;
         align-items: center;
         margin: auto;
-        width: 90%;
+        width: 93.64%;
         margin-top: 20px;
     }
+
+
 
     .input {
         font-size: 16px;
@@ -539,6 +539,15 @@ footer .Order-button-1 {
 
     .form div {
         width: 100%;
+    }
+
+    .form h2{
+        color: rgba(40, 40, 41, 1);
+    }
+
+    .submit_button{
+        height: 78px;
+        margin-bottom: 3%;
     }
 }
 
@@ -708,7 +717,7 @@ footer .Order-button-1 {
     }
 
     .second_part_of_footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 10px;
     }
