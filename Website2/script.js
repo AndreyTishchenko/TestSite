@@ -8,7 +8,6 @@ function setEventForWindow(){
         const width = header.offsetWidth;
         const headerOffset = header.offsetParent; // Position of header from the top
         const scrollPosition = window.scrollY;
-        console.log(scrollPosition >= firstSectionOffset - 110)
         // Add a fixed position style to the header once it's scrolled past its original position
         if (scrollPosition >= firstSectionOffset - 110) {
           header.style.position = 'fixed'; // Make it fixed once it's scrolled past

@@ -4,6 +4,14 @@ body {
     background-color: #282829;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
 @font-face {
     font-family: Prata;
     src: url("./assets/fonts/Prata-Regular.ttf");
@@ -19,6 +27,23 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 34px;
+}
+
+p {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    margin: 0px;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -26,6 +51,55 @@ header {
     top: 44px;
     position: sticky;
     background-color: rgba(33, 33, 33, 0.84);
+    z-index: 1000;
+
+}
+
+button{
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    border: 0px;
+    -moz-transition: all 0.2s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.2s ease-in;
+    /* Opera */
+    -o-transition: all 0.2s ease-in;
+    /* Standard */
+    transition: all 0.2s ease-in;
+}
+
+button:hover{
+    background-color: #515155 !important;
+    color: white !important;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+nav li{
+    cursor: pointer;
+    position: relative;
+}
+
+nav li::after{
+    content: ''; /* Пустой контент для создания линии */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Начальная ширина линии */
+    height: 2px; /* Толщина линии */
+    background-color: white; /* Цвет линии */
+    transition: width 0.3s ease-in-out; /* Плавный переход */
+}
+
+nav li:hover::after{
+    width: 100%;
 }
 
 header ul {
@@ -66,7 +140,6 @@ header ul li::marker {
     display: flex;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
-    padding-bottom: 50px;
 }
 
 .offer img {
@@ -93,18 +166,27 @@ header ul li::marker {
     font-family: Arial;
     font-size: 24px;
     font-weight: 400;
-    line-height: 26.4px;
     display: flex;
     align-items: center;
+    background: rgba(40, 40, 41, 0.7);
     gap: 5px;
+    margin-bottom: 10px;
+    width: fit-content;
 }
 
-.offers li span {
+.offers li span{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.offers li span.big {
     font-family: Prata;
+    margin: 0px;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0.04em;
+    display: inline-block;
 }
 
 .offers li::before {
@@ -114,14 +196,6 @@ header ul li::marker {
     margin-right: 17px;
 }
 
-h2 {
-    font-family: Arial;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 60px;
-    margin-bottom: 34px;
-}
-
 .Order-button-1 {
     width: 180px;
     height: 78px;
@@ -129,13 +203,6 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: white;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    text-align: center;
     border-radius: 4px;
     margin-top: 40px;
 }
@@ -145,20 +212,13 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     width: 49%;
+    margin-bottom: 50px;
 }
 
 .more_offers {
     display: flex;
     justify-content: space-between;
     padding-top: 99px;
-}
-
-p {
-    font-family: Arial;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33.6px;
-    text-align: left;
 }
 
 .more_offers ul {
@@ -208,12 +268,6 @@ hr {
     border-radius: 4px;
     background-color: white;
     color: rgba(40, 40, 41, 1);
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    text-align: center;
     margin-top: 80px;
 }
 
@@ -323,6 +377,8 @@ hr {
     align-items: center;
     margin-top: 26px;
     margin-bottom: 28px;
+    cursor: pointer;
+    width: fit-content;
 }
 
 .submit_button {
@@ -360,13 +416,27 @@ hr {
     margin-bottom: 40px;
 }
 
+footer{
+    padding-bottom: 52px;
+    background-color: rgba(34, 34, 34, 1);
+}
+
 .part_of_footer {
     display: flex;
     max-width: 1612px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    margin-top: 43px;
+}
+
+.part_of_footer p{
+    font-size: 20px;
+}
+
+.second_part_of_footer{
+    margin-top: 20px;
 }
 
 footer .Order-button-1 {
@@ -376,17 +446,44 @@ footer .Order-button-1 {
 .social_networks {
     display: flex;
     gap: 32px;
-    margin-left: 67px;
+}
+
+.social_networks img{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 793px) {
+    .form{
+        background-image: none;
+    }
     .form img {
         display: none;
     }
 
     .form h2 {
         font-size: 50px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 600 / 203;
+        /* margin-top: 0px; */
+        margin: 0px;
         text-align: center;
+        background-image: url(./assets/images/png/hotel.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .form form{
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .checkbox_label{
+        align-self: baseline;
     }
 
     .form div {
@@ -419,23 +516,66 @@ footer .Order-button-1 {
     }
 
     .image1{
-        align-self: baseline;
-        margin-left: 30px;
-        margin-bottom: 20px;    
+        display: none;
     }
 
     .image2{
-        align-self: flex-end;
-        margin-right: 30px;
-        margin-top: 20px;
+        display: none;
     }
 }
 
 @media (max-width: 1199px) {
-    .first_part_of_footer {
-        flex-wrap: wrap;
+    h1{
+        text-align: center;
+    }
+    
+    .offer {
+        flex-direction: column;
+    }
+
+    .offer_content {
+        align-self: flex-start;
+        width: 90%;
+    }
+
+    .offer img {
+        display: none;
+    }
+
+    .Order-button-1{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome_section_content{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul_background{
+        position: relative;
+        display: flex;
+        width: 100%;
         justify-content: center;
-        gap: 20px;
+        flex-grow: 1;
+    }
+
+    .ul_background img{
+        display: block;
+        width: 100%;
+        height: 400px;
+    };
+
+    .part_of_footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+        text-align: center;
+        width: 90%;
     }
 
     .Logo {
@@ -450,33 +590,21 @@ footer .Order-button-1 {
     }
 
     footer .Order-button-1 {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .second_part_of_footer {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        text-align: center;
+        display: none;
     }
 
     .second_part_of_footer p {
         font-size: 14px;
     }
 
-    .offer {
-        flex-direction: column;
-    }
-
-    .offer_content {
-        align-self: flex-start;
+    .offers{
         width: 90%;
-    }
-
-    .offer img {
-        align-self: flex-end;
-        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 10%;
+        background-color: #00000099;
     }
 }
 
@@ -513,17 +641,14 @@ footer .Order-button-1 {
         font-size: 12px;
     }
 
-    .offers li {
-        font-size: 14px;
-    }
-
     .offers li span {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     h2 {
         font-size: 30px;
         line-height: 40px;
+        text-align: center;
     }
 
     h1 {
@@ -538,5 +663,9 @@ footer .Order-button-1 {
 
     .offer_content {
         margin-bottom: 40px;
+    }
+
+    .offers li span.big{
+        font-size: 20px;
     }
 }
