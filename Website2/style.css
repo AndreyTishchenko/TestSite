@@ -85,7 +85,6 @@ button:hover{
 
 .submit_button:hover {
     background-color: rgb(96, 96, 96);
-    color: rgba(40, 40, 41, 1);
 }
 
 .ul_background img{
@@ -683,7 +682,6 @@ footer .Order-button-1 {
     }
 
     .submit_button:hover {
-        color: rgba(255, 255, 255, 1);
         background-color: rgba(40, 40, 41, 1);
     }
     
@@ -693,7 +691,6 @@ footer .Order-button-1 {
 
     button:hover{
         background-color: #515155 !important;
-        color: white !important;
     }
 
     nav li:hover::after{
